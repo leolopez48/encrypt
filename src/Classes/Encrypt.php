@@ -60,8 +60,8 @@ class Encrypt
      */
     public function encryptValueObject($model, $key)
     {
-        $data = strval($model[$value]);
-        $model[$key] = Crypt::encrypt($data);
+        $data = strval($model->{$key});
+        $model->{$key} = Crypt::encrypt($data);
 
         return $model;
     }
@@ -76,7 +76,7 @@ class Encrypt
      */
     public function decryptValueObject($model, $key)
     {
-        $model[$key] = intval(Crypt::decrypt($model[$key]));
+        $model->{$key} = intval(Crypt::decrypt($model->{$key}));
 
         return $model;
     }
