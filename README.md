@@ -1,5 +1,4 @@
-# encrypt
-Library for Laravel to Encrypt and Decrypt Models, Arrays and values.
+# Library for Laravel to Encrypt and Decrypt Models, Arrays and Values.
 
 ### Installation
 
