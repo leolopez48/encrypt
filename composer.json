@@ -1,28 +1,28 @@
 {
-    "name": "leolopez/encrypt",
-    "description": "Encrypts any field from a model, array or value.",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Leolopez\\Encrypt\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Leonel Lopez",
-            "email": "leonellopez647@gmail.com"
-        }
-    ],
-    "require": {},
-    "extra": {
-        "laravel": {
-            "providers": [
-                "\\Leolopez\\Encrypt\\EncryptServiceProvider"
-            ],
-            "aliases": {
-                "Encrypt": "Leolopez\\Encrypt\\Facades\\Encrypt"
-            }
-        }
+  "name": "leolopez/encrypt",
+  "description": "Encrypts any field from a model, array or value.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Leolopez\\Encrypt\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Leonel Lopez",
+      "email": "leonellopez647@gmail.com"
+    }
+  ],
+  "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "\\Leolopez\\Encrypt\\EncryptServiceProvider"
+      ],
+      "aliases": {
+        "Encrypt": "Leolopez\\Encrypt\\Facades\\Encrypt"
+      }
+    }
+  }
 }

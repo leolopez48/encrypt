@@ -14,7 +14,7 @@ class Encrypt
      *
      * @return Array The array encrypted.
      */
-    public function encryptObject($array, array $keys)
+    public function encryptObject($array, ...$keys)
     {
         $data = [];
 
@@ -36,7 +36,7 @@ class Encrypt
      *
      * @return Array The array decrypted.
      */
-    public function decryptObject($array, array $keys)
+    public function decryptObject($array, ...$keys)
     {
         $data = [];
 
@@ -116,7 +116,7 @@ class Encrypt
      *
      * @return Array The array encrypted.
      */
-    public function encryptArray($array, array $keys)
+    public function encryptArray($array, ...$keys)
     {
         foreach ($keys as $value) {
             $array[$value] = Crypt::encrypt($array[$value]);
@@ -133,7 +133,7 @@ class Encrypt
      *
      * @return Array The array encrypted.
      */
-    public function decryptArray($array, array $keys)
+    public function decryptArray($array, ...$keys)
     {
         foreach ($keys as $value) {
             $array[$value] = Crypt::decrypt($array[$value]);
