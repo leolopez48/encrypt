@@ -58,12 +58,16 @@ class Encrypt
      *
      * @return Array The array encrypted.
      */
-    public function encryptValueObject($model, $key)
+    public function encryptValueObject($model, ...$keys)
     {
-        $data = strval($model->{$key});
-        $model->{$key} = Crypt::encrypt($data);
+        $data = [];
 
-        return $model;
+        foreach ($keys as $value) {
+            $model->{$value} = Crypt::encrypt($model->{$value});
+        }
+        array_push($data, $model->getAttributes());
+
+        return $data[0];
     }
 
     /**
@@ -74,11 +78,16 @@ class Encrypt
      *
      * @return Array The array encrypted.
      */
-    public function decryptValueObject($model, $key)
+    public function decryptValueObject($model, ...$keys)
     {
-        $model->{$key} = intval(Crypt::decrypt($model->{$key}));
+        $data = [];
 
-        return $model;
+        foreach ($keys as $value) {
+            $model->{$value} = Crypt::encrypt($model->{$value});
+        }
+        array_push($data, $model->getAttributes());
+
+        return $data[0];
     }
 
     /**
@@ -104,7 +113,7 @@ class Encrypt
      */
     public function decryptValue($value)
     {
-        $value = intval(Crypt::decrypt($value));
+        $value = Crypt::decrypt($value);
         return $value;
     }
 
