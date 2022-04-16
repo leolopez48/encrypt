@@ -1,6 +1,8 @@
 # Library for Laravel to Encrypt and Decrypt Models, Arrays and Values.
 
-### Installation
+[![Latest Stable Version](http://poser.pugx.org/leolopez/encrypt/v)](https://packagist.org/packages/leolopez/encrypt) [![Total Downloads](http://poser.pugx.org/leolopez/encrypt/downloads)](https://packagist.org/packages/leolopez/encrypt) [![Latest Unstable Version](http://poser.pugx.org/leolopez/encrypt/v/unstable)](https://packagist.org/packages/leolopez/encrypt) [![License](http://poser.pugx.org/leolopez/encrypt/license)](https://packagist.org/packages/leolopez/encrypt) [![PHP Version Require](http://poser.pugx.org/leolopez/encrypt/require/php)](https://packagist.org/packages/leolopez/encrypt)
+
+## Installation
 
 Install the package
 
