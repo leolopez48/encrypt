@@ -14,7 +14,9 @@
             "email": "leonellopez647@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.2",
+    },
     "extra": {
         "laravel": {
             "providers": [
